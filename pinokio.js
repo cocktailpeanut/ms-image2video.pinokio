@@ -5,7 +5,7 @@ const exists = async p => !!(await fs.promises.stat(p).catch(e => false));
 module.exports = {
   title: "ModelScope Image2Video",
   icon: "icon.png",
-  description: "Turn any image into a video! (Web UI created by fffiloni: https://huggingface.co/spaces/fffiloni/MS-Image2Video)",
+  description: "[Nvidia GPU ONLY] Turn any image into a video! (Web UI created by fffiloni: https://huggingface.co/spaces/fffiloni/MS-Image2Video)",
   menu: async (kernel) => {
     let installed = await exists(path.resolve(__dirname, "env"))
     if (installed) {

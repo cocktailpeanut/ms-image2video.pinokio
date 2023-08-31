@@ -1,4 +1,4 @@
-xformers==0.0.20; sys_platform != 'darwin'
+xformers==0.0.20
 torch==2.0.1
 open_clip_torch>=2.0.2
 opencv-python-headless
